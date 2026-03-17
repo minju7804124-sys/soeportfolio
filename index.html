@@ -14,210 +14,184 @@
   <div class="grain"></div>
 
   <header class="site-header" id="top">
-    <a class="brand" href="#home">SoE!</a>
+    <a class="brand" href="#page-01">SoE!</a>
 
     <nav class="main-nav">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#film">FILM</a>
-      <a href="#animation">ANIMATION</a>
-      <a href="#commercial">COMMERCIAL</a>
-      <a href="#works">WORKS</a>
-      <a href="#contact">CONTACT</a>
+      <a href="#page-01">HOME</a>
+      <a href="#page-02">ABOUT</a>
+      <a href="#page-03">FILM</a>
+      <a href="#page-04">ANIMATION</a>
+      <a href="#page-06">COMMERCIAL</a>
+      <a href="#page-09">WORKS</a>
+      <a href="#page-13">CONTACT</a>
     </nav>
 
-    <a class="view-button" id="globalYoutubeLink" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE</a>
 
     <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
   </header>
 
   <nav class="mobile-menu" aria-label="모바일 메뉴">
-    <a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#film">FILM</a>
-    <a href="#animation">ANIMATION</a>
-    <a href="#commercial">COMMERCIAL</a>
-    <a href="#works">WORKS</a>
-    <a href="#contact">CONTACT</a>
-    <a class="mobile-view-link" id="mobileYoutubeLink" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE</a>
+    <a href="#page-01">HOME</a>
+    <a href="#page-02">ABOUT</a>
+    <a href="#page-03">FILM</a>
+    <a href="#page-04">ANIMATION</a>
+    <a href="#page-06">COMMERCIAL</a>
+    <a href="#page-09">WORKS</a>
+    <a href="#page-13">CONTACT</a>
   </nav>
 
   <aside class="page-index" aria-label="페이지 인덱스">
-    <a href="#home" data-target="home">01</a>
-    <a href="#about" data-target="about">02</a>
-    <a href="#film" data-target="film">03</a>
-    <a href="#animation-1" data-target="animation-1">04</a>
-    <a href="#animation-2" data-target="animation-2">05</a>
-    <a href="#commercial-1" data-target="commercial-1">06</a>
-    <a href="#commercial-2" data-target="commercial-2">07</a>
-    <a href="#commercial-3" data-target="commercial-3">08</a>
-    <a href="#works-1" data-target="works-1">09</a>
-    <a href="#works-2" data-target="works-2">10</a>
-    <a href="#works-3" data-target="works-3">11</a>
-    <a href="#works-4" data-target="works-4">12</a>
-    <a href="#contact" data-target="contact">13</a>
-    <a href="#outro" data-target="outro">14</a>
+    <a href="#page-01" data-target="page-01">01</a>
+    <a href="#page-02" data-target="page-02">02</a>
+    <a href="#page-03" data-target="page-03">03</a>
+    <a href="#page-04" data-target="page-04">04</a>
+    <a href="#page-05" data-target="page-05">05</a>
+    <a href="#page-06" data-target="page-06">06</a>
+    <a href="#page-07" data-target="page-07">07</a>
+    <a href="#page-08" data-target="page-08">08</a>
+    <a href="#page-09" data-target="page-09">09</a>
+    <a href="#page-10" data-target="page-10">10</a>
+    <a href="#page-11" data-target="page-11">11</a>
+    <a href="#page-12" data-target="page-12">12</a>
+    <a href="#page-13" data-target="page-13">13</a>
+    <a href="#page-14" data-target="page-14">14</a>
   </aside>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-copy fade-up">
-        <p class="eyebrow">AI Visual Director / Generative Filmmaker</p>
-        <h1>Choi Minju / SoE!</h1>
-        <p class="hero-desc">캔바에서 만든 14개의 애니메이션 페이지를 그대로 이어붙인 포트폴리오 버전. 메뉴를 누르면 해당 섹션으로 이동하고, VIEW WEBSITE 버튼은 유튜브로 연결되도록 세팅했다.</p>
-        <div class="hero-actions">
-          <a href="#about" class="ghost-button">ENTER</a>
-          <a href="#works" class="ghost-button">SEE WORKS</a>
-        </div>
-      </div>
-      <div class="hero-video-shell fade-up delay-1">
-        <video class="hero-video managed-video" data-section="home" autoplay muted loop playsinline preload="metadata" poster="assets/1.jpg">
+    <section class="portfolio-page hero-page" id="page-01" data-nav="home">
+      <div class="page-meta"><span>01</span><strong>HOME</strong></div>
+      <div class="page-shell fade-up">
+        <video class="managed-video" data-section="page-01" autoplay muted playsinline preload="metadata" poster="assets/1.jpg">
           <source src="assets/1.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
 
-    <section class="portfolio-section" id="about" data-group="about">
-      <div class="section-heading fade-up">
-        <span>02</span>
-        <h2>ABOUT</h2>
-      </div>
-      <div class="video-frame fade-up delay-1">
-        <video class="managed-video" data-section="about" muted loop playsinline preload="metadata" poster="assets/2.jpg">
+    <section class="portfolio-page" id="page-02" data-nav="about">
+      <div class="page-meta"><span>02</span><strong>ABOUT</strong></div>
+      <div class="page-shell fade-up">
+        <video class="managed-video" data-section="page-02" muted playsinline preload="metadata" poster="assets/2.jpg">
           <source src="assets/2.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
 
-    <section class="portfolio-section" id="film" data-group="film">
-      <div class="section-heading fade-up">
-        <span>03</span>
-        <h2>FILM</h2>
-      </div>
-      <div class="video-frame fade-up delay-1 has-cta">
-        <video class="managed-video" data-section="film" muted loop playsinline preload="metadata" poster="assets/3.jpg">
+    <section class="portfolio-page" id="page-03" data-nav="film">
+      <div class="page-meta"><span>03</span><strong>FILM</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-03" muted playsinline preload="metadata" poster="assets/3.jpg">
           <source src="assets/3.mp4" type="video/mp4" />
         </video>
-        <a class="section-link" data-link-key="film" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
+        <a class="hotspot-link hotspot-p03" aria-label="Watch film" data-link-key="film" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
       </div>
     </section>
 
-    <section class="portfolio-section split-section" id="animation" data-group="animation">
-      <div class="section-heading fade-up">
-        <span>04–05</span>
-        <h2>ANIMATION</h2>
-      </div>
-      <div class="video-grid two-up">
-        <article class="video-card fade-up delay-1" id="animation-1">
-          <div class="card-label">04</div>
-          <video class="managed-video" data-section="animation-1" muted loop playsinline preload="metadata" poster="assets/4.jpg">
-            <source src="assets/4.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="animation1" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
-        <article class="video-card fade-up delay-2" id="animation-2">
-          <div class="card-label">05</div>
-          <video class="managed-video" data-section="animation-2" muted loop playsinline preload="metadata" poster="assets/5.jpg">
-            <source src="assets/5.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="animation2" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
+    <section class="portfolio-page" id="page-04" data-nav="animation">
+      <div class="page-meta"><span>04</span><strong>ANIMATION</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-04" muted playsinline preload="metadata" poster="assets/4.jpg">
+          <source src="assets/4.mp4" type="video/mp4" />
+        </video>
+        <a class="hotspot-link hotspot-p04" aria-label="Watch film" data-link-key="animation1" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
       </div>
     </section>
 
-    <section class="portfolio-section split-section" id="commercial" data-group="commercial">
-      <div class="section-heading fade-up">
-        <span>06–08</span>
-        <h2>COMMERCIAL</h2>
-      </div>
-      <div class="video-grid three-up">
-        <article class="video-card fade-up delay-1" id="commercial-1">
-          <div class="card-label">06</div>
-          <video class="managed-video" data-section="commercial-1" muted loop playsinline preload="metadata" poster="assets/6.jpg">
-            <source src="assets/6.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="commercial1" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
-        <article class="video-card fade-up delay-2" id="commercial-2">
-          <div class="card-label">07</div>
-          <video class="managed-video" data-section="commercial-2" muted loop playsinline preload="metadata" poster="assets/7.jpg">
-            <source src="assets/7.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="commercial2" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
-        <article class="video-card fade-up delay-3" id="commercial-3">
-          <div class="card-label">08</div>
-          <video class="managed-video" data-section="commercial-3" muted loop playsinline preload="metadata" poster="assets/8.jpg">
-            <source src="assets/8.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="commercial3" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
+    <section class="portfolio-page" id="page-05" data-nav="animation">
+      <div class="page-meta"><span>05</span><strong>ANIMATION</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-05" muted playsinline preload="metadata" poster="assets/5.jpg">
+          <source src="assets/5.mp4" type="video/mp4" />
+        </video>
+        <a class="hotspot-link hotspot-p05" aria-label="Watch film" data-link-key="animation2" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
       </div>
     </section>
 
-    <section class="portfolio-section split-section" id="works" data-group="works">
-      <div class="section-heading fade-up">
-        <span>09–12</span>
-        <h2>WORKS</h2>
-      </div>
-      <div class="video-grid works-grid">
-        <article class="video-card wide fade-up delay-1" id="works-1">
-          <div class="card-label">09</div>
-          <video class="managed-video" data-section="works-1" muted loop playsinline preload="metadata" poster="assets/9.jpg">
-            <source src="assets/9.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="works1" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
-        <article class="video-card fade-up delay-2" id="works-2">
-          <div class="card-label">10</div>
-          <video class="managed-video" data-section="works-2" muted loop playsinline preload="metadata" poster="assets/10.jpg">
-            <source src="assets/10.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="works2" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
-        <article class="video-card fade-up delay-3" id="works-3">
-          <div class="card-label">11</div>
-          <video class="managed-video" data-section="works-3" muted loop playsinline preload="metadata" poster="assets/11.jpg">
-            <source src="assets/11.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="works3" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
-        <article class="video-card fade-up delay-4" id="works-4">
-          <div class="card-label">12</div>
-          <video class="managed-video" data-section="works-4" muted loop playsinline preload="metadata" poster="assets/12.jpg">
-            <source src="assets/12.mp4" type="video/mp4" />
-          </video>
-          <a class="section-link inline" data-link-key="works4" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
-        </article>
+    <section class="portfolio-page" id="page-06" data-nav="commercial">
+      <div class="page-meta"><span>06</span><strong>COMMERCIAL</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-06" muted playsinline preload="metadata" poster="assets/6.jpg">
+          <source src="assets/6.mp4" type="video/mp4" />
+        </video>
+        <a class="hotspot-link hotspot-p06" aria-label="Watch film" data-link-key="commercial1" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
       </div>
     </section>
 
-    <section class="portfolio-section" id="contact" data-group="contact">
-      <div class="section-heading fade-up">
-        <span>13</span>
-        <h2>CONTACT</h2>
+    <section class="portfolio-page" id="page-07" data-nav="commercial">
+      <div class="page-meta"><span>07</span><strong>COMMERCIAL</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-07" muted playsinline preload="metadata" poster="assets/7.jpg">
+          <source src="assets/7.mp4" type="video/mp4" />
+        </video>
+        <a class="hotspot-link hotspot-p07" aria-label="Watch film" data-link-key="commercial2" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
       </div>
-      <div class="video-frame fade-up delay-1 has-cta">
-        <video class="managed-video" data-section="contact" muted loop playsinline preload="metadata" poster="assets/13.jpg">
+    </section>
+
+    <section class="portfolio-page" id="page-08" data-nav="commercial">
+      <div class="page-meta"><span>08</span><strong>COMMERCIAL</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-08" muted playsinline preload="metadata" poster="assets/8.jpg">
+          <source src="assets/8.mp4" type="video/mp4" />
+        </video>
+        <a class="hotspot-link hotspot-p08" aria-label="Watch film" data-link-key="commercial3" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
+      </div>
+    </section>
+
+    <section class="portfolio-page" id="page-09" data-nav="works">
+      <div class="page-meta"><span>09</span><strong>WORKS</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-09" muted playsinline preload="metadata" poster="assets/9.jpg">
+          <source src="assets/9.mp4" type="video/mp4" />
+        </video>
+        <a class="hotspot-link hotspot-p09" aria-label="Watch film" data-link-key="works1" href="https://www.youtube.com/" target="_blank" rel="noreferrer"></a>
+      </div>
+    </section>
+
+    <section class="portfolio-page" id="page-10" data-nav="works">
+      <div class="page-meta"><span>10</span><strong>WORKS</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-10" muted playsinline preload="metadata" poster="assets/10.jpg">
+          <source src="assets/10.mp4" type="video/mp4" />
+        </video>
+
+      </div>
+    </section>
+
+    <section class="portfolio-page" id="page-11" data-nav="works">
+      <div class="page-meta"><span>11</span><strong>WORKS</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-11" muted playsinline preload="metadata" poster="assets/11.jpg">
+          <source src="assets/11.mp4" type="video/mp4" />
+        </video>
+
+      </div>
+    </section>
+
+    <section class="portfolio-page" id="page-12" data-nav="works">
+      <div class="page-meta"><span>12</span><strong>WORKS</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-12" muted playsinline preload="metadata" poster="assets/12.jpg">
+          <source src="assets/12.mp4" type="video/mp4" />
+        </video>
+
+      </div>
+    </section>
+
+    <section class="portfolio-page" id="page-13" data-nav="contact">
+      <div class="page-meta"><span>13</span><strong>CONTACT</strong></div>
+      <div class="page-shell fade-up has-cta">
+        <video class="managed-video" data-section="page-13" muted playsinline preload="metadata" poster="assets/13.jpg">
           <source src="assets/13.mp4" type="video/mp4" />
         </video>
-        <a class="section-link" data-link-key="contact" href="https://www.youtube.com/" target="_blank" rel="noreferrer">VIEW WEBSITE ↗</a>
+
       </div>
     </section>
 
-    <section class="portfolio-section outro" id="outro" data-group="outro">
-      <div class="section-heading fade-up">
-        <span>14</span>
-        <h2>OUTRO</h2>
-      </div>
-      <div class="video-frame fade-up delay-1">
-        <video class="managed-video" data-section="outro" muted loop playsinline preload="metadata" poster="assets/14.jpg">
+    <section class="portfolio-page" id="page-14" data-nav="outro">
+      <div class="page-meta"><span>14</span><strong>OUTRO</strong></div>
+      <div class="page-shell fade-up">
+        <video class="managed-video" data-section="page-14" muted playsinline preload="metadata" poster="assets/14.jpg">
           <source src="assets/14.mp4" type="video/mp4" />
         </video>
-      </div>
-      <div class="footer-meta fade-up delay-2">
-        <p>© SoE! Portfolio</p>
-        <a href="#top">BACK TO TOP ↑</a>
       </div>
     </section>
   </main>
