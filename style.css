@@ -57,6 +57,10 @@ main { position:relative; z-index:1; }
   border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:center;
 }
 .page-shell {
+  --crop-x: 3.5;
+  --crop-y: 22;
+  --crop-w: 93;
+  --crop-h: 74;
   position:relative;
   width:min(calc((100vh - var(--header-h) - 6px) * 1.7777778), 100vw);
   height:min(calc(100vh - var(--header-h) - 6px), calc(100vw / 1.7777778));
@@ -65,8 +69,12 @@ main { position:relative; z-index:1; }
 }
 .page-shell video,
 .page-shell .endframe {
-  position:absolute; inset:0;
-  width:100%; height:100%; object-fit:contain; display:block; background:#000;
+  position:absolute;
+  left: calc(-1% * var(--crop-x) * (100 / var(--crop-w)));
+  top: calc(-1% * var(--crop-y) * (100 / var(--crop-h)));
+  width: calc(100% * (100 / var(--crop-w)));
+  height: calc(100% * (100 / var(--crop-h)));
+  object-fit: fill; display:block; background:#000;
 }
 .page-shell .endframe {
   opacity:0; pointer-events:none; z-index:2;
@@ -75,14 +83,14 @@ main { position:relative; z-index:1; }
 .page-shell.ended video { opacity:0; }
 .fade-up { opacity:0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
 .fade-up.visible { opacity:1; transform:none; }
-/* hotspot coords based on 1920x1080 frames */
-.hotspot-p03 { left: 90.5%; top: 24.3%; width: 8.6%; height: 3.8%; }
-.hotspot-p04 { left: 81.0%; top: 69.0%; width: 11.8%; height: 4.4%; }
-.hotspot-p05 { left: 44.7%; top: 84.3%; width: 11.9%; height: 4.6%; }
-.hotspot-p06 { left: 45.3%; top: 84.0%; width: 11.6%; height: 4.4%; }
-.hotspot-p07 { left: 44.8%; top: 84.0%; width: 11.6%; height: 4.4%; }
-.hotspot-p08 { left: 45.2%; top: 84.2%; width: 11.6%; height: 4.4%; }
-.hotspot-p09 { left: 90.2%; top: 94.0%; width: 8.8%; height: 3.6%; }
+/* hotspot coords remapped after crop */
+.hotspot-p03 { left: 93.55%; top: 3.11%; width: 6.45%; height: 5.14%; }
+.hotspot-p04 { left: 83.33%; top: 63.51%; width: 12.69%; height: 5.95%; }
+.hotspot-p05 { left: 44.30%; top: 84.19%; width: 12.80%; height: 6.22%; }
+.hotspot-p06 { left: 44.95%; top: 83.78%; width: 12.47%; height: 5.95%; }
+.hotspot-p07 { left: 44.41%; top: 83.78%; width: 12.47%; height: 5.95%; }
+.hotspot-p08 { left: 44.84%; top: 84.05%; width: 12.47%; height: 5.95%; }
+.hotspot-p09 { left: 90.54%; top: 95.14%; width: 9.46%; height: 4.86%; }
 @media (max-width: 1100px) {
   .site-header { grid-template-columns: 1fr auto auto; }
   .main-nav { display:none; }
@@ -97,4 +105,15 @@ main { position:relative; z-index:1; }
     height: calc(100vw / 1.7777778);
   }
   .portfolio-page { justify-content:flex-start; padding-top: calc(var(--header-h) + 8px); }
+}
+
+@media (max-width: 700px) {
+  .page-shell {
+    --crop-x: 3.5;
+    --crop-y: 24;
+    --crop-w: 93;
+    --crop-h: 72;
+    width:100vw;
+    height: calc(100vw / 1.7777778);
+  }
 }
